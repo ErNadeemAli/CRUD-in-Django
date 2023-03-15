@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center mt-4">ENTER DETAILS</h3>
+        <form action="" method="post" class="form border p-4">
+            {% csrf_token %}
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Employee ID:</label>
+            <div class="col-sm-4">
+                {{ form.e_id }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Employee Name:</label>
+            <div class="col-sm-4">
+                {{ form.e_name }}
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Employee Email:</label>
+            <div class="col-sm-4">
+                {{ form.e_email }}
+            </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Employee Contact:</label>
+            <div class="col-sm-4">
+                {{ form.e_contact }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Employee Address:</label>
+            <div class="col-sm-4">
+                {{ form.e_address}}
+            </div>
+        </div>
+        <button class="btn btn-success col-lg-2">Submit</button>
+    </form>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>
